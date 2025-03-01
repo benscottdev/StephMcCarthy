@@ -17,7 +17,7 @@ body {
 
 .max-width {
   max-width: 1200px;
-  width: 80%;
+  width: 90%;
 }
 
 h1 {
@@ -64,10 +64,13 @@ p {
 }
 .hamburger span {
   display: block;
-  width: 40px;
-  height: 3px;
-  margin-bottom: 10px;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 7.5px;
   background-color: black;
+}
+.hamburger .last-span {
+  margin-bottom: 0px !important;
 }
 
 .mobile-menu .full-screen-menu {
@@ -128,6 +131,11 @@ p {
   align-items: center;
   justify-content: space-between;
   position: relative;
+}
+@media (max-width: 800px) {
+  .header {
+    padding: 20px 20px;
+  }
 }
 .header .logo a {
   text-decoration: none !important;
@@ -212,6 +220,11 @@ p {
   padding: 100px 0px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .about {
+    padding: 50px 0px;
+  }
 }
 .about p {
   text-align: center;
@@ -305,6 +318,11 @@ p {
   background-color: #fafafa;
   padding: 50px;
 }
+@media (max-width: 800px) {
+  .books-home {
+    padding: 50px 0px;
+  }
+}
 .books-home h1 {
   text-align: center;
   font-size: 50px;
@@ -315,7 +333,7 @@ p {
 }
 
 .in-the-press {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   background-color: #fff;
   padding: 100px 0px;
 }
@@ -345,11 +363,26 @@ p {
   text-align: center;
   gap: 10px;
 }
+@media (max-width: 800px) {
+  .in-the-press .swiper .swiper-wrapper .swiper-slide {
+    padding: 50px;
+  }
+}
 .in-the-press .swiper .swiper-wrapper .swiper-slide h1 {
   font-family: "Day Roman", serif;
 }
+@media (max-width: 800px) {
+  .in-the-press .swiper .swiper-wrapper .swiper-slide h1 {
+    font-size: 30px;
+  }
+}
 .in-the-press .swiper .swiper-wrapper .swiper-slide p {
   font-family: "Helvetica", sans-serif;
+}
+@media (max-width: 800px) {
+  .in-the-press .swiper .swiper-wrapper .swiper-slide p {
+    font-size: 12px;
+  }
 }
 .in-the-press .swiper .swiper-wrapper .swiper-slide a {
   font-family: "Helvetica", sans-serif;
@@ -373,6 +406,16 @@ footer hr {
   display: block;
   width: 60%;
   margin: 25px 0px;
+}
+@media (max-width: 800px) {
+  footer hr {
+    margin: 10px;
+  }
+}
+@media (max-width: 800px) {
+  footer h1 {
+    font-size: 20px;
+  }
 }
 footer .footer-nav-links {
   width: 40%;
