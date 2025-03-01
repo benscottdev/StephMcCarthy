@@ -129,13 +129,21 @@ p {
   justify-content: space-between;
   position: relative;
 }
-.header .logo h1 {
+.header .logo a {
+  text-decoration: none !important;
+  font-family: "Day Roman", serif, Times, serif !important;
+  color: rgb(27, 27, 27) !important;
+}
+.header .logo a:active {
   font-family: "Day Roman", serif, Times, serif;
   color: rgb(27, 27, 27);
   font-size: 2vw;
 }
+.header .logo a h1 {
+  font-size: 2vw;
+}
 @media (max-width: 800px) {
-  .header .logo h1 {
+  .header .logo a h1 {
     font-size: 4vw;
   }
 }

@@ -144,12 +144,21 @@ p {
   position: relative;
 
   .logo {
-    h1 {
-      font-family: $mainFont, Times, serif;
-      color: rgb(27, 27, 27);
-      font-size: 2vw;
-      @media (max-width: 800px) {
-        font-size: 4vw;
+    a {
+      text-decoration: none !important;
+      font-family: $mainFont, Times, serif !important;
+      color: rgb(27, 27, 27) !important;
+      &:active {
+        font-family: $mainFont, Times, serif;
+        color: rgb(27, 27, 27);
+        font-size: 2vw;
+      }
+      h1 {
+        font-size: 2vw;
+
+        @media (max-width: 800px) {
+          font-size: 4vw;
+        }
       }
     }
   }
