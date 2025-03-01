@@ -7,38 +7,57 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="mobile-menu hidden">
+      <div class="full-screen-menu">
+        <div class="mobile-nav-links">
+          <ul>
+            <a href="./index.html">
+              <li>Home</li>
+            </a>
+            <a href="./books.html">
+              <li>Books</li>
+            </a>
+            <a href="./film.html">
+              <li>Film</li>
+            </a>
+            <a href="./contact.html">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="header">
       <div class="logo">
         <h1>Steph McCarthy</h1>
       </div>
       <div class="nav-links">
         <ul>
-          <a href="/">
+          <a href="./index.html">
             <li>Home</li>
-          </a>
-          <a href="/about.html">
-            <li>About</li>
           </a>
           <a href="./books.html">
             <li>Books</li>
           </a>
-          <a href=".in-the-press">
-            <li>In The Press</li>
+          <a href="./film.html">
+            <li>Film</li>
           </a>
-          <a href="/news.html">
-            <li>News & Events</li>
-          </a>
-          <a href="/contact.html">
+          <a href="./contact.html">
             <li>Contact</li>
           </a>
         </ul>
       </div>
+      <div class="hamburger header" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <!-- ENDHEADER -->
     <div class="books">
-      <div class="books-intro max-width">
+      <div class="intro max-width">
         <h1>Books</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos in dicta quia sint ipsum vel dignissimos natus quae beatae ratione autem, voluptatibus itaque placeat nesciunt sunt vero repudiandae repellat Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet neque debitis sed provident. Alias porro officiis, pariatur blanditiis sed quis eos reiciendis iure eum distinctio recusandae doloribus corporis cumque.</p>
+        <p class="max-width" style="margin: 0 auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos in dicta quia sint ipsum vel dignissimos natus quae beatae ratione autem, voluptatibus itaque placeat nesciunt sunt vero repudiandae repellat Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet neque debitis sed provident. Alias porro officiis, pariatur blanditiis sed quis eos reiciendis iure eum distinctio recusandae doloribus corporis cumque.</p>
       </div>
       <hr />
       <div class="books-container">
@@ -123,6 +142,28 @@
         </div>
       </div>
     </div>
+
+    <footer>
+      <h1>Stephanie McCarthy</h1>
+      <br />
+      <hr />
+      <br />
+      <div class="footer-nav-links">
+        <ul>
+          <a href="./books.html">
+            <li>Books</li>
+          </a>
+          <a href="./film.html">
+            <li>Film</li>
+          </a>
+          <a href="/contact.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
