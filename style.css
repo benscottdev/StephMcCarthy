@@ -304,7 +304,7 @@ p {
   font-size: 18px;
 }
 .books .books-container .book-item .book-info p {
-  font-size: 20px;
+  font-size: 16px;
   font-family: Helvetica, sans-serif;
 }
 @media (min-width: 1000px) {
@@ -527,4 +527,26 @@ footer .footer-nav-links ul a li .underline:active:after {
 .contact {
   width: 100dvw;
   margin: 0 auto;
+}
+
+b {
+  font-weight: 900 !important;
+  font-style: italic !important;
+}
+
+.new-release {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5% auto;
+  gap: 20px;
+  max-width: 80%;
+}
+.new-release .book-img img {
+  max-width: 400px;
+}
+.new-release p {
+  max-width: 500px;
+  text-align: center;
 }
