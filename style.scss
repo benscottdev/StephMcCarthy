@@ -337,10 +337,10 @@ p {
 			}
 
 			@media (min-width: 1000px) {
-				&:nth-child(2n) {
-					flex-direction: row-reverse;
-					text-align: right;
-				}
+				// &:nth-child(2n) {
+				// flex-direction: row-reverse;
+				// text-align: right;
+				// }
 			}
 		}
 	}
